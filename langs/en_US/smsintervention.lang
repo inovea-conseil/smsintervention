@@ -1,0 +1,66 @@
+# SMS Intervention - Send SMS since FICHINTER card
+# Copyright (C) 2017       Inovea-conseil.com     <info@inovea-conseil.com>
+#
+
+#
+# Generic
+#
+Module432411Name = SMS Intervention
+Module432411Desc = Sending SMS to customers from the intervention card (depending on the intervention status)
+
+RightsSMSI= Send SMS from the intervention's card
+
+
+#
+# Admin page
+#
+MyModuleSetup = My module setup
+Settings = Settings
+smsInterventionSetup = SMS Intervention setup
+smsInterventionSetupPage = Specify here the connection parameters to the OVH API (You can generate API access on <a href="https://api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&PUT=/sms/*&DELETE=/sms/*&POST=/sms/*" target="_blank">this page</a>).
+
+SMSINTERVENTION_APPLICATION_KEY = Application key
+SMSINTERVENTION_APPLICATION_SECRET = Application secret
+SMSINTERVENTION_CONSUMER_KEY = Consumer key
+
+SMS_CONNEXION_FAILED = Error connecting to your SMS account
+SMS_CREDIT_EMPTY = Your SMS account credit is empty
+SMS_ERROR_DESTINATAIRE = Recipient number format incorrect
+
+#
+# ContentSMS Page
+#
+smsInterventionContentSetup = Change SMS content
+smsInterventionContentSetupPage = Change the content of the SMS according to the status of the interventions
+ContentSMS = SMS Content
+InterventionStatus = Intervention Status
+help = help
+helpSMSContentDesc = You can include the following variables in your SMS : <ul><li><b>_TYPE_</b> : Type indicated in the intervention sheet.</li></ul>
+character = Character(s)
+
+#
+# History
+#
+smsInterventionHistory = SMS History
+PhoneShort = Phone
+DateCreationShort = Date send
+
+#
+# Affichage Bouton Envoyer
+#
+SEND_SMS = Send SMS
+SMS_CONSTANTE_EMPTY =The connection parameters are empty
+SMS_CONTENT_EMPTY = No content for this status
+SMS_NO_MOBILE = No mobile phone number defined
+SMS_MODAL_TITLE = Sending SMS
+SMS_MODAL_DESCRIPTION = Do you really want to send an SMS to this customer?
+SMS_CANCEL_BTN = Cancel
+
+#
+# Envoi du SMS
+#
+SMS_FICHINTER_TYPE = device
+SMS_SEND = SMS Sent
+SMS_SEND_FAILED = Failed to send SMS
+SMS_STILL_SEND = An SMS has already been sent
+

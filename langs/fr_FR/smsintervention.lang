@@ -1,0 +1,64 @@
+# SMS Intervention - Send SMS since FICHINTER card
+# Copyright (C) 2017       Inovea-conseil.com     <info@inovea-conseil.com>
+
+
+#
+# Générique
+#
+Module432411Name = SMS Intervention
+Module432411Desc=Envoi de SMS aux clients depuis la Fiche d'intervention (selon statut d'intervention)
+
+RightsSMSI=Envoi de SMS depuis la fiche intervention
+
+
+#
+# Page d'administration
+#
+MyModuleSetup = Configuration du module
+Settings = Réglages
+smsInterventionSetup = Réglages SMS Intervention
+smsInterventionSetupPage =Indiquez ici les paramètres de connexion à l'API OVH (vous pouvez générer les accès API sur <a href="https://api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&PUT=/sms/*&DELETE=/sms/*&POST=/sms/*" target="_blank">cette page</a>).
+SMSINTERVENTION_APPLICATION_KEY =Application key
+SMSINTERVENTION_APPLICATION_SECRET =Application secret
+SMSINTERVENTION_CONSUMER_KEY =Consumer key
+
+SMS_CONNEXION_FAILED=Erreur de connexion à votre compte SMS
+SMS_CREDIT_EMPTY=Le crédit de votre compte SMS est vide
+SMS_ERROR_DESTINATAIRE=Le format du numéro du destinataire est incorrect
+
+#
+# ContentSMS Page
+#
+smsInterventionContentSetup = Modification contenu SMS
+smsInterventionContentSetupPage = Modifiez le contenu du SMS en fonction du statut de l'intervention
+ContentSMS = Contenu SMS
+InterventionStatus = Statut de l'intervention
+help = Aide
+helpSMSContentDesc = Vous pouvez inclure les variables suivantes dans votre SMS : <ul><li><b>_TYPE_</b> : Type indiqué dans la fiche intervention.</li></ul>
+character = Caractère(s)
+
+#
+# History
+#
+smsInterventionHistory = Historique SMS
+PhoneShort = Tel.
+DateCreationShort = Date d'envoi
+
+#
+# Affichage Bouton Envoyer
+#
+SEND_SMS = Envoyer SMS
+SMS_CONSTANTE_EMPTY = Les paramètres de connexion sont vides
+SMS_CONTENT_EMPTY = Aucun contenu pour ce statut
+SMS_NO_MOBILE = Aucun numéro de portable défini
+SMS_MODAL_TITLE = Envoi de SMS
+SMS_MODAL_DESCRIPTION = Voulez-vous vraiment envoyer un SMS à ce client ?
+SMS_CANCEL_BTN = Annuler
+
+#
+# Envoi du SMS
+#
+SMS_FICHINTER_TYPE = appareil
+SMS_SEND = SMS envoyé
+SMS_SEND_FAILED = Echec de l'envoi du SMS
+SMS_STILL_SEND = Un SMS a déjà été envoyé avec ce statut
